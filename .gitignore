@@ -1,0 +1,4 @@
+# Ignore all ROM files
+*.gba
+out/*.gba
+rom/*.gba

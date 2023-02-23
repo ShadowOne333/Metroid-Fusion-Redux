@@ -1,10 +1,10 @@
 ; Main file for Metroid Fusion (J) patches.
 ; Metroid Fusion (J) ROM Map: https://labk.org/maps/app/?game=mf&region=J&map=data
 .gba
-.open "fusion.gba","Metroid Fusion.gba",0x8000000
+.open "rom/Metroid Fusion (Japan).gba","out/Metroid Fusion.gba",0x8000000
 
 ; Language selection code by biospark
-.include "MF_J_language.asm"
+.include "code/MF_J_language.asm"
 
 ; Better Morph Roll code
 ; Makes the morphball only do its "rolling" animation if the ball is moving
@@ -42,5 +42,9 @@
 ; Zazabi's AI fix
 ; Modifies Zazabi's AI to make it vulnerable to all Charged beams and all Missile types. Overwrites existing code in Zazabi AI.
 .include "code/zazabi_fix.asm"
+
+; Optional patches
+; Includes the user-selected optional patches inside the optional.asm file
+;.include "optional.asm"
 
 .close

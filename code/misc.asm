@@ -1,6 +1,4 @@
 ; Several tweaks and QoL patches for the Japanese version of Metroid Fusion. Ported by ShadowOne333
-;.gba
-;.open "Metroid Fusion.gba",0x8000000
 
 ;-------------------------------------
 ; Skip intro by pressing Start even on a new save file
@@ -57,13 +55,6 @@
 .org 0x8290086	; 73 4E -> 00 00
 	.dh 0h	; mov r0,r0
 ;-------------------------------------
-; [MF_U] Normal beam is chargeable
-;8005CF0
-; 1A D0 -> C0 46
-; For Fusion (J)
-;.org 0x8005D54	; 1A D0 -> C0 46
-;	nop
-;-------------------------------------
 ; Walljump doesn't cancel Charge Beam (U)
 ;8005EE6
 ; 10 73 - C0 46
@@ -84,17 +75,5 @@
 .org 0x80A3F92	; 0A -> 00	; Power bombs
 	.db 00h,38h	; Don't know why armips overwrites the $38 with $00, so we force it
 ;-------------------------------------
-; [MF_U] Stops low health alarm in Metroid Fusion
-;71DA2: 1D 2E -> 14 E0
-; For Fusion (J) (0x2C)
-;.org 0x807244E	; 1D 2E -> 14 E0
-;	b 0x807247A
-;-------------------------------------
-; Skips intro cutscene, going right to the first nav room briefing. 0C for skipping file selection and going straight to Docking Bay, or 0B to skip new file intro and Jump to ship landing (U)
-; 0x8777E - 01 to 0C
-; For Fusion (J)
-;.org 0x80886F6	; 0x886F6, 01->0C
-;	.db 0Ch
-;-------------------------------------
+
 .pool
-;.close
