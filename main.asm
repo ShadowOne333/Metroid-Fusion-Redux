@@ -45,6 +45,6 @@
 
 ; Optional patches
 ; Includes the user-selected optional patches inside the optional.asm file
-;.include "optional.asm"
+.include "optional.asm"
 
 .close

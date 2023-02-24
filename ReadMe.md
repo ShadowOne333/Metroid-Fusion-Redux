@@ -31,33 +31,33 @@ https://github.com/ShadowOne333/Metroid-Fusion-Redux
 
 ## Changelog
 
-	* Language Selection hack (by biospark), reworked to properly translate the Game Over screen and the "Start Over" text as well
-	* Main game is in English, while each file can have a specific language available for selection (thanks to the hack above from biospark)
-	* Modify the Morph Ball so its rolling animation stops when Samus is static or not moving at all. The rolling animation only works as normal when moving left or right.
-	* Modify Samus' suit palettes to have a better colour palette based on the In-Game cutscenes and official artwork (specifically for the Varia Suit, so it better matches its artwork colours). This is a further improved hack of this: https://www.romhacking.net/hacks/7473/
-	* Charge Beam is no longer cancelled when doing walljumps
-	* Equipment Screen fix
-	* Faster Door Transitions 
-	* Fixes a glitched frame in Samus when doing a Walljump to the left
-	* Fixes to the endame ship OAM
-	* Fixes the arm cannon palette to update accordingly with the suit colours
-	* IBJ (Infinite Bomb Jump) is now possible like in Super Metroid and Zero Mission. Several Demos have also been fixed manually to account for the new bomb timings.
-	* Horizontal speed is now maintained when landing after a jump, instead of being reset to 0 on each land.
-	* More accurate In-Game clock (a second each 60 frames instead of 64 frames)
-	* Single Wall walljump is now possible, like in Super Metroid and Zero Mission. Several Demos have also been fixed manually to account for the new walljumping mechanic.
-	* It's now possible to skip the Introduction cutscene by pressing Start, even if the current save file hasn't been completed. 
-	* Stage palettes have been modified to have a better selection of non-saturated colours. This also modifies the red outlines that many assets of Fusion had.
-	* Restored an unused Dock room in the original Metroid Fusion, just above the starting area. (It might hold a newly added item).
-	* Zazabi (the elongated jellyfish one-eyed boss) was only vulnerable to the normal Missile and the Normal beam in the vanilla game. Zazabi's code has been reworked to make it vulnerable to all kinds of beams (Wave and above) and Missiles (Super Missiles, Ice and Diffusion). 
+* Language Selection hack (by biospark), reworked to properly translate the Game Over screen and the "Start Over" text as well
+* Main game is in English, while each file can have a specific language available for selection (thanks to the hack above from biospark)
+* Modify the Morph Ball so its rolling animation stops when Samus is static or not moving at all. The rolling animation only works as normal when moving left or right.
+* Modify Samus' suit palettes to have a better colour palette based on the In-Game cutscenes and official artwork (specifically for the Varia Suit, so it better matches its artwork colours). This is a further improved hack of this: https://www.romhacking.net/hacks/7473/
+* Charge Beam is no longer cancelled when doing walljumps
+* Equipment Screen fix
+* Faster Door Transitions 
+* Fixes a glitched frame in Samus when doing a Walljump to the left
+* Fixes to the endame ship OAM
+* Fixes the arm cannon palette to update accordingly with the suit colours
+* IBJ (Infinite Bomb Jump) is now possible like in Super Metroid and Zero Mission. Several Demos have also been fixed manually to account for the new bomb timings.
+* Horizontal speed is now maintained when landing after a jump, instead of being reset to 0 on each land.
+* More accurate In-Game clock (a second each 60 frames instead of 64 frames)
+* Single Wall walljump is now possible, like in Super Metroid and Zero Mission. Several Demos have also been fixed manually to account for the new walljumping mechanic.
+* It's now possible to skip the Introduction cutscene by pressing Start, even if the current save file hasn't been completed. 
+* Stage palettes have been modified to have a better selection of non-saturated colours. This also modifies the red outlines that many assets of Fusion had.
+* Restored an unused Dock room in the original Metroid Fusion, just above the starting area. (It might hold a newly added item).
+* Zazabi (the elongated jellyfish one-eyed boss) was only vulnerable to the normal Missile and the Normal beam in the vanilla game. Zazabi's code has been reworked to make it vulnerable to all kinds of beams (Wave and above) and Missiles (Super Missiles, Ice and Diffusion). 
 
 
 -------------------
 
 ## Optional patches
 
-	1. **Disable Low Health Alarm** - Self-explanatory. Disables the alarm that you get when Samus is on low health
-	2. **Normal Beam Chargeable** - Allows the small Normal beam to be chargeable
-	3. **Permanent Debug Menu** - Enable the Debug menu In-Game. This replaces the Status screen for Samus.
+1. **Disable Low Health Alarm** - Self-explanatory. Disables the alarm that you get when Samus is on low health
+2. **Normal Beam Chargeable** - Allows the small Normal beam to be chargeable
+3. **Permanent Debug Menu** - Enable the Debug menu In-Game. This replaces the Status screen for Samus.
 
 -------------------
 
