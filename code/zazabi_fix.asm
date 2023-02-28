@@ -1,7 +1,5 @@
 ; Modifies Zazabi's AI to make it vulnerable to all Charged beams and all Missile types. Overwrites existing code in Zazabi AI.
 ; Written by Kazuto, Ported to [MF_J] by ShadowOne333
-;.gba
-;.open "Metroid Fusion.gba",0x8000000
 
 .org 0x08045670	; .org 0x08045418 in U
 	ldr	r0,=0x03000994	; =0x03000960	; Base offset for projectiles
@@ -38,5 +36,3 @@ ZazabiFix:
 	mov	r1,r6
 	mov	r0,r5
 .endarea
-
-;.close

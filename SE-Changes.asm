@@ -28,20 +28,22 @@
 ; Dark rooms are made darker by changing palette 18A3 to 0000
 
 ; Main Deck 
-	Room 0D, background 2 modified the starry sky can be seen
+	; Rooms layouts 1, 4, 5, 6, 7, 8, D, F
+	; Rooms C had changes in place
+	Room 0D, BG 2 modified, starry sky can be seen
 	Room 11, red doors changed to green doors
-	Room 13, added more blue to BG1
-	Room 22, BG1 made blue instead of black (made by changing 0009 to 0C01)
-	Room 26, extended the passageway on the top right to properly connect to the hallway tiles from Room C9 (or 54?)
-	Room 2E, less saturated colour palette
+!!!	Room 13, added more blue to BG1
+!!!	Room 22, BG1 made blue instead of black (made by changing 0009 to 0C01)
+!!!	Room 26, extended the passageway on the top right to properly connect to the hallway tiles from Room C9 (or 54?)
+!!!	Room 2E, less saturated colour palette
 	Room 30, removes enemy in the middle
-	Room 37, modify black palette (0000 to 0840)
+!!!	Room 37, modify black palette (0000 to 0840)
 	Room 41, changes ONLY left red door to green door
-	Room 43, modifies BG1 palette (0000 to 0C01 and 0043 to 0C01)
-	Room 4A, change colour from 0043 to 0840
-	Room 4B, same as Room 43
+!!!	Room 43, modifies BG1 palette (0000 to 0C01 and 0043 to 0C01)
+!!!	Room 4A, change colour from 0043 to 0840
+!!!	Room 4B, same as Room 43
 	Room 4D, 4E, 4F, 50, changed red doors to green doors
-	Room 55, modified to not be able to cheese the SA-X fight anymore
+	Room 55, modified to not cheese the SA-X fight anymore
 
 ; Sector 1
 	Room 4, change BG1 palette from 0000 to 0403 (3 times), same for the other rooms with the same BG1

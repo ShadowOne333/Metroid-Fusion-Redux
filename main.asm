@@ -35,6 +35,10 @@
 ; Based on Special Edition, this modifies the red outlines that appear throughout to suitable colours depending on the environment
 .include "code/stage_palettes.asm"
 
+; Sequence Breaking Fusion by Kazuto
+; Still pending, the code is quite convoluted
+;.include "code/sequence_breaking.asm"
+
 ; Unused Docking Bay
 ; Restores a previously unused area (Docking Bay) found in the Main Deck, just north of the starting area
 .include "code/unused_dock.asm"
