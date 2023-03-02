@@ -31,6 +31,10 @@
 ; Authors: Kazuto, biospark, and others
 .include "code/misc.asm"
 
+; Room changes carried over from Special Edition
+; Modifies some of the rooms in the game to match slight changes made in Special Edition (though not all map changes were carried over, check the ASM for details)
+.include "code/room_changes.asm"
+
 ; Better Stage outlines
 ; Based on Special Edition, this modifies the red outlines that appear throughout to suitable colours depending on the environment
 .include "code/stage_palettes.asm"

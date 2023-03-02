@@ -12,11 +12,11 @@
 .area 0x9A8,0xFF	; Limit area, 0x83C09D8
 ; Import minimap, Main Deck's Room 2 and Room 6 layout data here since it's free space now and it fits.
 minimap:
-	.import "data/main_deck_minimap.bin"
+	.import "data/minimaps/main_deck_minimap.bin"
 room2_layout:
-	.import "data/main_deck_room2_layout.bin"
+	.import "data/rooms/main_deck_room2_layout.bin"
 room6_layout:
-	.import "data/main_deck_room6_layout.bin"
+	.import "data/rooms/main_deck_room6_layout.bin"
 .endarea
 ;-------------------------------------
 ; Main Deck room 2 sprite layout start
@@ -76,5 +76,5 @@ room6_layout:
 ; Import data for Main Deck Room 6 and Door Data
 .org 0x87F1510	; 0x879ECC8
 door_data:
-	.import "data/main_deck_door_data.bin"
+	.import "data/doors/main_deck_door_data.bin"
 

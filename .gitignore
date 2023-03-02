@@ -2,3 +2,6 @@
 *.gba
 out/*.gba
 rom/*.gba
+out/*.ss1
+rom/*.ss1
+rom/*.sav
