@@ -8,6 +8,8 @@
 
 * [**Optional Patches**](#optional-patches)
 
+* [**To-Do**](#to-do)
+
 * [**Compilation**](#compilation)
 
 * [**Patch & Use Instructions**](#instructions)
@@ -58,6 +60,15 @@ https://github.com/ShadowOne333/Metroid-Fusion-Redux
 1. **Disable Low Health Alarm** - Self-explanatory. Disables the alarm that you get when Samus is on low health
 2. **Normal Beam Chargeable** - Allows the small Normal beam to be chargeable
 3. **Permanent Debug Menu** - Enable the Debug menu In-Game. This replaces the Status screen for Samus.
+
+-------------------
+
+## To-Do
+
+1. Implement "Sequence Breaking Fusion" hack into the Japanese ROM. 
+There's an on-going disassembly for this, but it is far from being compilable in any form, there's too many inconsistencies between the subroutines and I'm also not that adept in ARM assembly to know if some of the hex codes I disassembled properly work with ARMIPS.
+2. There might be other things that might be added, but it's still uncertain whether or not I'd want to do more after Sequence Break, since that's the only thing missing in Fusion for me to make it perfect.
+3. Possibly more optional patches.
 
 -------------------
 
