@@ -181,7 +181,8 @@
 .org 0x840A59A
 	.dh 0x4A10
 .org 0x840A5DA
-	.dh 0x4529	; 0x55CE <- 0x0DCE
+; Palette for the outline of the Docking Bay yellow blocks
+	.dh 0x01F0	;0x4529, 0x55CE <- 0x0DCE
 .org 0x840A5F6
 	.dh 0x01CE
 
@@ -635,7 +636,7 @@
 
 ; Upper Sector 4 palette
 .org 0x85379EE
-	.dh 0x5293	; 0x0012
+	.dh 0x0012	; 0x0012 for the red wires, 0x5293 for gray
 .org 0x8537A0E
 	.dh 0x764B
 
