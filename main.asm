@@ -31,6 +31,10 @@
 ; Authors: Kazuto, biospark, and others
 .include "code/misc.asm"
 
+; Keep the original behaviour of the Bombs and their timings, and also the original behaviour for the Wall Jumps
+; This code should be disabled once a proper Sequence Breaking port to MF_J is done
+.include "code/og_bombs_walljump.asm"
+
 ; Room changes carried over from Special Edition
 ; Modifies some of the rooms in the game to match slight changes made in Special Edition (though not all map changes were carried over, check the ASM for details)
 .include "code/room_changes.asm"
