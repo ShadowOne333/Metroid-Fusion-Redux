@@ -33,7 +33,7 @@
 
 ; Keep the original behaviour of the Bombs and their timings, and also the original behaviour for the Wall Jumps
 ; This code should be disabled once a proper Sequence Breaking port to MF_J is done
-.include "code/og_bombs_walljump.asm"
+;.include "code/og_bombs_walljump.asm"
 
 ; Room changes carried over from Special Edition
 ; Modifies some of the rooms in the game to match slight changes made in Special Edition (though not all map changes were carried over, check the ASM for details)
@@ -44,8 +44,9 @@
 .include "code/stage_palettes.asm"
 
 ; Sequence Breaking Fusion by Kazuto
-; Still pending, the code is quite convoluted
-;.include "code/sequence_breaking.asm"
+; Ported to Metroid Fusion Japanese by SpineShark
+; Allows Metroid Fusion to sequence break outside of the original linear plot
+.include "code/SBF/SBF_J_Main.asm"
 
 ; Unused Docking Bay
 ; Restores a previously unused area (Docking Bay) found in the Main Deck, just north of the starting area
