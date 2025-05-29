@@ -34,7 +34,8 @@ https://github.com/ShadowOne333/Metroid-Fusion-Redux
 ## Changelog
 
 * Language Selection hack (by biospark), reworked to properly translate the Game Over screen and the "Start Over" text as well
-* Main game is in English, while each file can have a specific language available for selection (thanks to the hack above from biospark)
+* Main game is now in English, while each file can have a specific language available for selection (thanks to the hack above from biospark).
+* Default Text speeds is now set to fast. Originally, you had to hold on the A button to make it scroll fast. Now holding down the A Button makes the text scroll slow instead, while the normal conversation text scrolls fast without the press of a button.
 * Modify the Morph Ball so its rolling animation stops when Samus is static or not moving at all. The rolling animation only works as normal when moving left or right.
 * Modify Samus' suit palettes to have a better colour palette based on the In-Game cutscenes and official artwork (specifically for the Varia Suit, so it better matches its artwork colours). This is a further improved hack of this: https://www.romhacking.net/hacks/7473/
 * Charge Beam is no longer cancelled when doing walljumps
@@ -49,8 +50,9 @@ https://github.com/ShadowOne333/Metroid-Fusion-Redux
 * Single Wall walljump is now possible, like in Super Metroid and Zero Mission. Several Demos have also been fixed manually to account for the new walljumping mechanic.
 * It's now possible to skip the Introduction cutscene by pressing Start, even if the current save file hasn't been completed. 
 * Stage palettes have been modified to have a better selection of non-saturated colours. This also modifies the red outlines that many assets of Fusion had.
-* Restored an unused Dock room in the original Metroid Fusion, just above the starting area. (It might hold a newly added item).
-* Zazabi (the elongated jellyfish one-eyed boss) was only vulnerable to the normal Missile and the Normal beam in the vanilla game. Zazabi's code has been reworked to make it vulnerable to all kinds of beams (Wave and above) and Missiles (Super Missiles, Ice and Diffusion). 
+* Restored an unused Dock room in the original Metroid Fusion, just above the starting area. (It might hold a new added item).
+* Zazabi (the elongated jellyfish one-eyed boss) was only vulnerable to the normal Missile and the Normal beam in the vanilla game. Zazabi's code has been reworked to make it vulnerable to all kinds of beams (Wave and above) and Missiles (Super Missiles, Ice and Diffusion).
+* Sequence Breaking hack (originally by Kazuto) has been ported and implemented into the Japanese version of Metroid Fusion, thanks to SpineShark. This hack makes Sequence Break possible in Metroid Fusion, quoting Kazuto: "The event sequence exists the same as it does in vanilla Fusion, but it's now possible to trigger some events out of order, or to skip over others entirely".
 
 
 -------------------
@@ -65,10 +67,8 @@ https://github.com/ShadowOne333/Metroid-Fusion-Redux
 
 ## To-Do
 
-1. Implement "Sequence Breaking Fusion" hack into the Japanese ROM. 
-There's an on-going disassembly for this, but it is far from being compilable in any form, there's too many inconsistencies between the subroutines and I'm also not that adept in ARM assembly to know if some of the hex codes I disassembled properly work with ARMIPS.
-2. There might be other things that might be added, but it's still uncertain whether or not I'd want to do more after Sequence Break, since that's the only thing missing in Fusion for me to make it perfect.
-3. Possibly more optional patches.
+1. 
+2. Possibly more optional patches?.
 
 -------------------
 
@@ -131,7 +131,7 @@ If you want to apply any of the optional patches, you can use each Optional patc
 * **biospark** - For his incredible work on the original coding for the MF_J Language Selector, as well as a lot of help regarding other specifics of the hack.
 * **Raygun** - For the Keep Speed/Smooth Landing, Single Walljump, Walljump Frame fix, Walljump Charge beam, Arm Cannon Palette updates hacks, which were ported over to MF_J by me.
 * **Kazuto** - For the wide array of hacks, like Equipment Screen and Zazabi fixes, and for the Sequence Breaking hack as well.
-* **SpineShark** - For porting the original Sequence Breaking hack into the Japanese version of Metroid Fusion.
+* **SpineShark** - For porting the original Sequence Breaking hack into the Japanese version of Metroid Fusion, and the Fast Text hack
 * **LostGlaceon** - For the original "Metroid Fusion: Special Edition" hack, which was the base inspiration to start working on Fusion (J) and start porting other hacks to it.
 * **FelixWright** - For his original "Project ZM" hack, which also served as inspiration for this hack, and for his help and support towards certain hacks and porting them.
 * **somerando(caauyjdp)** - For all the help and the fix for the Faster Door Transitions hack

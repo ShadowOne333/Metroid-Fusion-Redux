@@ -75,5 +75,18 @@
 .org 0x80A3F92	; 0A -> 00	; Power bombs
 	.db 00h,38h	; Don't know why armips overwrites the $38 with $00, so we force it
 ;-------------------------------------
+; [MF_U] & [MF_J] Navigation conversation text always scrolls fast, without holding a button. By SpineShark
 
+; For Fusion (U) or MF_U
+;.org 0x8079C9C	; 06 D0 -> C0 46
+;	nop
+;.org 0x807A216	; 03 D0 -> C0 46
+;	nop
+
+; For Fusion (J) or MF_J
+.org 0x807A470	; 06 D0 -> C0 46
+	nop
+.org 0x807A9EA	; 03 D0 -> C0 46
+	nop
+;-------------------------------------
 .pool
