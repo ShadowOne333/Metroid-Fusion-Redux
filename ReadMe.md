@@ -68,9 +68,12 @@ https://github.com/ShadowOne333/Metroid-Fusion-Redux
 ## To-Do
 
 1. Bugfixes to the Language Selection code.
+
 	a) If you beat the game on adult mode (kanji) with the patch that changes the game to be all in english, the gallery will not be updated with the appropriate unlockable pictures. Possible fix could be to just get rid of that condition so the player can unlock them by playing in any language, since in the original it was tied to beating the game in Kanji language but not on Hiragana.
+
 	b) If the player tries to start the game at any point after the second "attract mode vid" begins playing, the game will default to the Japanese language.
-2. Possibly more optional patches?.
+
+3. Possibly more optional patches?.
 
 -------------------
 
