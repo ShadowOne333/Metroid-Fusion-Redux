@@ -6,6 +6,9 @@
 ; Language selection code by biospark
 .include "code/MF_J_language.asm"
 
+; Language selection bugfixes by SpineShark
+.include "code/MF_J_LanguagePatchFix.asm"
+
 ; Better Morph Roll code
 ; Makes the morphball only do its "rolling" animation if the ball is moving
 .include "code/better_morph_roll.asm"

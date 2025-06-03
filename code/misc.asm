@@ -5,6 +5,13 @@
 .org 0x808864A
 	lsl r0,#0x0
 ;-------------------------------------
+; [MF_J] Hard difficulty can be selected for any new game
+; by SpineShark
+.org 0x809FFC4
+    nop
+.org 0x80A0050
+    nop
+;-------------------------------------
 ;Single wall jumping (U)
 ;0x92BC - 0x16 -> 0x0B
 ; For Fusion (J), Needs the walljumping demo to be fixed
