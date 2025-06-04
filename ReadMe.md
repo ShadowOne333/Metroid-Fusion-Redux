@@ -131,7 +131,7 @@ If you want to apply any of the optional patches, you can use each Optional patc
 * **biospark** - For his incredible work on the original coding for the MF_J Language Selector, as well as a lot of help regarding other specifics of the hack.
 * **Raygun** - For the Keep Speed/Smooth Landing, Single Walljump, Walljump Frame fix, Walljump Charge beam, Arm Cannon Palette updates hacks, which were ported over to MF_J by me.
 * **Kazuto** - For the wide array of hacks, like Equipment Screen and Zazabi fixes, and for the Sequence Breaking hack as well.
-* **SpineShark** - For porting the original Sequence Breaking hack into the Japanese version of Metroid Fusion, the Fast Text hack and also several bugfixes to biospark's Laguage Selector hack for MF_J.
+* **SpineShark** - For porting the original Sequence Breaking hack into the Japanese version of Metroid Fusion, Fast Text hack, Unlock all gallery images hack, and also several bugfixes to biospark's Laguage Selector hack for MF_J.
 * **LostGlaceon** - For the original "Metroid Fusion: Special Edition" hack, which was the base inspiration to start working on Fusion (J) and start porting other hacks to it.
 * **FelixWright** - For his original "Project ZM" hack, which also served as inspiration for this hack, and for his help and support towards certain hacks and porting them.
 * **somerando(caauyjdp)** - For all the help and the fix for the Faster Door Transitions hack

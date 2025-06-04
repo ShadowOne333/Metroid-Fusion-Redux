@@ -12,6 +12,15 @@
 .org 0x80A0050
     nop
 ;-------------------------------------
+; [MF_J] Unlock gallery and all ending images
+; by SpineShark
+.org 0x807F96E
+    ldr r0,[pc,0xA4]
+.org 0x807FA0C
+    nop
+.org 0x807FA14
+    .dw 0x1FFF
+;-------------------------------------
 ;Single wall jumping (U)
 ;0x92BC - 0x16 -> 0x0B
 ; For Fusion (J), Needs the walljumping demo to be fixed
