@@ -8,8 +8,6 @@
 
 * [**Optional Patches**](#optional-patches)
 
-* [**To-Do**](#to-do)
-
 * [**Compilation**](#compilation)
 
 * [**Patch & Use Instructions**](#instructions)
@@ -62,13 +60,6 @@ https://github.com/ShadowOne333/Metroid-Fusion-Redux
 1. **Disable Low Health Alarm** - Self-explanatory. Disables the alarm that you get when Samus is on low health
 2. **Normal Beam Chargeable** - Allows the small Normal beam to be chargeable
 3. **Permanent Debug Menu** - Enable the Debug menu In-Game. This replaces the Status screen for Samus.
-
--------------------
-
-## To-Do
-
-1. Make all the Gallery images available from the start / fresh save.
-2. Possibly more optional patches?.
 
 -------------------
 
