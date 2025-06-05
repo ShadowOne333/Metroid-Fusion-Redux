@@ -75,8 +75,8 @@
 ;8005EE6
 ; 10 73 - C0 46
 ; For Fusion (J) 
-.org 0x8005F4A	; 10 73 - C0 46
-	nop
+;.org 0x8005F4A	; 10 73 - C0 46
+	;nop
 ;-------------------------------------
 ; [MF_J] Made a version of my More Accurate In-Game Clock tweak for the Japanese version. 
 .org 0x08068C9C	; 3F -> 3B
