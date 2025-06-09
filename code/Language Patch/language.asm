@@ -10,9 +10,9 @@
 ;-------------------------------------
 ; Fix SRAM reset text
 .org 0x858ABCC
-    .import "data/reset_sram_1.bin"
+    .import "code/Language Patch/reset_sram_1.bin"
 .org 0x858AFA0
-    .import "data/reset_sram_2.bin"
+    .import "code/Language Patch/reset_sram_2.bin"
 
 ;-------------------------------------
 ; Pretend language is 0 when loading difficulty text
@@ -44,7 +44,7 @@
 	.db 0x2B	; Originally 0x3B
 ; Import graphics
 .org 0x873B6F0
-	.import "data/game_over_text.bin"
+	.import "code/Language Patch/game_over_text.bin"
 
 ;-------------------------------------
 ; Fix the start over text
@@ -92,7 +92,7 @@ start_over:
 
 ;-------------------------------------
 ; Fix behavior of language select cursor
-.include "code/lang_select_cursor.asm"
+.include "code/Language Patch//lang_select_cursor.asm"
 
 ;-------------------------------------
 ; Set language after choosing

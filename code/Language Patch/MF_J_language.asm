@@ -8,11 +8,11 @@
 .definelabel PlaySound,0x8002754
 
 ; modified code
-.include "code/language.asm"
-.include "code/lang_select_cursor.asm"
+.include "code/Language Patch/language.asm"
+.include "code/Language Patch/lang_select_cursor.asm"
 
 ; new code/data
 .org 0x822B9E8  ; unused sound
-    .include "code/language_new.asm"
+    .include "code/Language Patch/language_new.asm"
 
 ;.close

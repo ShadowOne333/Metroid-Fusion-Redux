@@ -5,7 +5,7 @@
 ;       Biospark for the data maps, function dumper and tank fix
 ;       ShadowOne333 for the partial SBF port
 
-.include "code/SBF/SBF_J_Labels.asm"
+.include "code/Sequence Breaking Fusion/SBF_J_Labels.asm"
 
 ; [OK] means that section is fully ported (aside from undiscovered bugs)
 

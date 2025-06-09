@@ -14,12 +14,12 @@
 ;-------------------------------------
 ; [MF_J] Unlock gallery and all ending images
 ; by SpineShark
-.org 0x807F96E
-    ldr r0,[pc,0xA4]
-.org 0x807FA0C
-    nop
-.org 0x807FA14
-    .dw 0x1FFF
+;.org 0x807F96E
+;    ldr r0,[pc,0xA4]
+;.org 0x807FA0C
+;    nop
+;.org 0x807FA14
+;    .dw 0x1FFF
 ;-------------------------------------
 ;Single wall jumping (U)
 ;0x92BC - 0x16 -> 0x0B
@@ -72,6 +72,8 @@
 	.dh 0h	; mov r0,r0
 ;-------------------------------------
 ; Walljump doesn't cancel Charge Beam (U)
+; THIS CAUSES A GLITCH, DO NOT ENABLE!
+; If a Charged Beam is released when Samus is holding unto an edge (Power grip), then the released shot is released infinitely several times
 ;8005EE6
 ; 10 73 - C0 46
 ; For Fusion (J) 
@@ -105,4 +107,3 @@
 .org 0x807A9EA	; 03 D0 -> C0 46
 	nop
 ;-------------------------------------
-.pool

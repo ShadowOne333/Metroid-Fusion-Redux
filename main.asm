@@ -4,10 +4,10 @@
 .open "rom/Metroid Fusion (Japan).gba","out/Metroid Fusion.gba",0x8000000
 
 ; Language selection code by biospark
-.include "code/MF_J_language.asm"
+.include "code/Language Patch/MF_J_language.asm"
 
 ; Language selection bugfixes by SpineShark
-.include "code/MF_J_LanguagePatchFix.asm"
+.include "code/Language Patch/MF_J_LanguagePatchFix.asm"
 
 ; Better Morph Roll code
 ; Makes the morphball only do its "rolling" animation if the ball is moving
@@ -34,10 +34,6 @@
 ; Authors: Kazuto, biospark, and others
 .include "code/misc.asm"
 
-; Keep the original behaviour of the Bombs and their timings, and also the original behaviour for the Wall Jumps
-; This code should be disabled once a proper Sequence Breaking port to MF_J is done
-;.include "code/og_bombs_walljump.asm"
-
 ; Room changes carried over from Special Edition
 ; Modifies some of the rooms in the game to match slight changes made in Special Edition (though not all map changes were carried over, check the ASM for details)
 .include "code/room_changes.asm"
@@ -49,7 +45,11 @@
 ; Sequence Breaking Fusion by Kazuto
 ; Ported to Metroid Fusion Japanese by SpineShark
 ; Allows Metroid Fusion to sequence break outside of the original linear plot
-.include "code/SBF/SBF_J_Main.asm"
+.include "code/Sequence Breaking Fusion/SBF_J_Main.asm"
+
+; Keep the original behaviour of the Bombs and their timings, and also the original behaviour for the Wall Jumps
+; This code should be disabled if Sequence Breaking Fusion is NOT used
+;.include "code/og_bombs_walljump.asm"
 
 ; Unused Docking Bay
 ; Restores a previously unused area (Docking Bay) found in the Main Deck, just north of the starting area

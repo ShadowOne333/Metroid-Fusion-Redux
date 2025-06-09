@@ -1,18 +1,18 @@
 SetLanguageText1:
-    .import "data/set_language_text_1.bin"
+    .import "code/Language Patch/set_language_text_1.bin"
 SetLanguageText2:
-    .import "data/set_language_text_2.bin"
+    .import "code/Language Patch/set_language_text_2.bin"
 SetLanguageText3:
-    .import "data/set_language_text_3.bin"
+    .import "code/Language Patch/set_language_text_3.bin"
 SetLanguageText4:
-    .import "data/set_language_text_4.bin"
+    .import "code/Language Patch/set_language_text_4.bin"
 SetLanguageText5:
-    .import "data/set_language_text_5.bin"
+    .import "code/Language Patch/set_language_text_5.bin"
 
 EasyNormalText:
-    .import "data/easy_normal_text.bin"
+    .import "code/Language Patch/easy_normal_text.bin"
 EasyNormalHardText:
-    .import "data/easy_normal_hard_text.bin"
+    .import "code/Language Patch/easy_normal_hard_text.bin"
 
 MainDeckTextOAM:
     .dh 2

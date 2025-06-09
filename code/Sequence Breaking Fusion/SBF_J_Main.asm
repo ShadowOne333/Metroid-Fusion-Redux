@@ -10,9 +10,9 @@
 ;=====================================
 ; Sequence breaking patches
 ;=====================================
-.include "code/SBF/SBF_J_v1.0.asm"
+.include "code/Sequence Breaking Fusion/SBF_J_v1.0.asm"
 ;.include "code/SBF/zazabi_fix.asm"
-.include "code/SBF/MissilePBTankFix.asm"
+.include "code/Sequence Breaking Fusion/MissilePBTankFix.asm"
 
 ;=====================================
 ; Optional things
