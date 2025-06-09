@@ -12,7 +12,7 @@
 .pool
 
 ; Move to free space for MF_J
-.org 0x87F1460	; 879F370 in MF_U
+.org 0x87F3220	;0x87F1460	; 879F370 in MF_U
 KeepSpeed:
 	push    r4,r5,r14        ;
 	ldr     r2,=SamusData     ;
@@ -37,11 +37,30 @@ KeepSpeed:
 	strb    r1,[r2,2h]       ;	Set TurningFlag == 0
 
 LCheck:
-	pop     r0               ;
-	push    r0               ;
-	cmp     r0,0FDh          ; if r0 == FD, samus is landing
-	beq     Landing          ;
-	b       DontKeepSpeed    ;
+    mov     r0,r2            ;
+    sub     r0,5Ch           ;
+    ldrh    r0,[r0]          ; r0 = button input
+    mov     r1,20h           ;
+    lsl     r1,r1,4h         ;
+    and     r1,r0            ; if L Is not pressed
+    cmp     r1,0h            ;
+    beq     DontKeepSpeed      ;
+    mov     r0,r2            ;;L is pressed
+    add     r0,7h            ;
+    ldrb    r0,[r0,8h]       ; load Speedboost/knockback Counter
+    mov     r1,50h           ; 
+    lsl     r1,r1,1h         ;
+    cmp     r0,r1            ;
+    blt     ContinueLPressed ; if SpeedboostCounter<A0
+    sub     r1,2h            ; 
+    strb    r1,[r2,0Fh]      ; speedboostCounter = 9E
+    b       ContinueLPressed ;
+ContinueLPressed:
+    pop     r0               ;
+    push    r0               ;
+    cmp     r0,0FDh          ; if r0 == FD, samus is landing
+    beq     Landing          ;
+    b       DontKeepSpeed    ;
 Landing:
 	mov	r0,r2
 	sub     r0,5Ch           ;  r0 = buttonInput

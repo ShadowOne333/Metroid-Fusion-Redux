@@ -14,12 +14,12 @@
 ;-------------------------------------
 ; [MF_J] Unlock gallery and all ending images
 ; by SpineShark
-;.org 0x807F96E
-;    ldr r0,[pc,0xA4]
-;.org 0x807FA0C
-;    nop
-;.org 0x807FA14
-;    .dw 0x1FFF
+.org 0x807F96E
+    ldr r0,[pc,0xA4]
+.org 0x807FA0C
+    nop
+.org 0x807FA14
+    .dw 0x1FFF
 ;-------------------------------------
 ;Single wall jumping (U)
 ;0x92BC - 0x16 -> 0x0B
@@ -88,10 +88,10 @@
 ; 0xA208E		0A -> 00	; Missiles
  ;0xA20A0		0A -> 00	; Power bombs
 ; For Fusion (J)
-.org 0x80A3F7E	; 0A -> 00	; Missiles
-	.db 00h
-.org 0x80A3F92	; 0A -> 00	; Power bombs
-	.db 00h,38h	; Don't know why armips overwrites the $38 with $00, so we force it
+;.org 0x80A3F7E	; 0A -> 00	; Missiles
+;	.db 00h
+;.org 0x80A3F92	; 0A -> 00	; Power bombs
+;	.db 00h,38h	; Don't know why armips overwrites the $38 with $00, so we force it
 ;-------------------------------------
 ; [MF_U] & [MF_J] Navigation conversation text always scrolls fast, without holding a button. By SpineShark
 
@@ -107,3 +107,4 @@
 .org 0x807A9EA	; 03 D0 -> C0 46
 	nop
 ;-------------------------------------
+.pool
