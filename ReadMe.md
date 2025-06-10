@@ -49,6 +49,7 @@ https://github.com/ShadowOne333/Metroid-Fusion-Redux
 * It's now possible to skip the Introduction cutscene by pressing Start, even if the current save file hasn't been completed. 
 * Stage palettes have been modified to have a better selection of non-saturated colours. This also modifies the red outlines that many assets of Fusion had.
 * Restored an unused Dock room in the original Metroid Fusion, just above the starting area. (It might hold a new added item).
+* Moved the forced Missile Tank from Sector 3 to a new location in Sector 5 (Room 0B, one tile room with a U-shaped bomb trail) where it's optional for 0% runs.
 * Zazabi (the elongated jellyfish one-eyed boss) was only vulnerable to the normal Missile and the Normal beam in the vanilla game. Zazabi's code has been reworked to make it vulnerable to all kinds of beams (Wave and above) and Missiles (Super Missiles, Ice and Diffusion).
 * Sequence Breaking hack (originally by Kazuto) has been ported and implemented into the Japanese version of Metroid Fusion, thanks to SpineShark. This hack makes Sequence Break possible in Metroid Fusion, quoting Kazuto: "The event sequence exists the same as it does in vanilla Fusion, but it's now possible to trigger some events out of order, or to skip over others entirely".
 

@@ -61,15 +61,26 @@
 .org 0x83C7F9C	; 0x83C59D4 in U
 	.dw sector2_room35_layout	; Moved to 0x8476E8C by MAGE
 ;-------------------------------------
+; Sector 3 Minimap change to remove the forced Missile Tank in room 18
+.org 0x857585C
+	.import "data/minimaps/sector3_minimap.bin"
 ; Sector 3 room entries
 .org 0x83C8A28	; 0x83C6460 in U
 	.dw sector3_room25_layout	; Moved to 0x847707C by MAGE
 .org 0x83C8A64	; 0x83C649C in U
 	.dw sector3_room26_layout	; Moved to 0x84770AC by MAGE
 ;-------------------------------------
+; Sector 3 Minimap change to add back the forced Missile Tank from Sector 3 into Room 0B of Sector 5
+.org 0x857603C
+	.import "data/minimaps/sector5_minimap.bin"
 ; Sector 5 room entries
+.org 0x83C8D38	; Room 0B, add back Missile Tank moved from Sector 3
+	.dw sector5_room0B_layout	; Moved to 0x879EC68 by MAGE
 .org 0x83C91E4	; 0x83C6C1C in U
 	.dw sector5_room1F_layout	; Moved to 0x847715C by MAGE
+.org 0x851EDBC	; Room 21, remove the weird Power Bomb block
+	.db 0x8A,0x10,0x89,0x00,0xBE,0x10
+	.db 0x00,0x02,0x81,0x0A,0x00,0x00
 .org 0x83C934C	; 0x83C6D84 in U
 	.dw sector5_room25_layout	; Moved to 0x8477130 by MAGE
 ;-------------------------------------
@@ -124,6 +135,8 @@ sector3_room25_layout:
 	.import "data/rooms/sector3_room25_layout.bin"
 sector3_room26_layout:
 	.import "data/rooms/sector3_room26_layout.bin"
+sector5_room0B_layout:
+	.import "data/rooms/sector5_room0B_layout.bin"
 sector5_room1F_layout:
 	.import "data/rooms/sector5_room1F_layout.bin"
 sector5_room25_layout:
