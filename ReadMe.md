@@ -33,7 +33,10 @@ https://github.com/ShadowOne333/Metroid-Fusion-Redux
 
 * Language Selection hack (by biospark), reworked to properly translate the Game Over screen and the "Start Over" text as well
 * Main game is now in English, while each file can have a specific language available for selection (thanks to the hack above from biospark).
-* Default Text speeds is now set to fast. Originally, you had to hold on the A button to make it scroll fast. Now holding down the A Button makes the text scroll slow instead, while the normal conversation text scrolls fast without the press of a button.
+* It's now possible to skip the Introduction cutscene by pressing Start, even if the current save file hasn't been completed.
+* All Gallery images are unlocked by default on a fresh save file. NOTE: If you still want to unlock the images manually, apply the "Original Gallery Unlocks" optional patch over Redux and BEFORE starting your game! If you apply the patch over an already started game, the Gallery images will remain unlocked, as those are stored in the save file.
+* Item Collection list and Timer that appear on the Pause/Map Screen (previously exclusive to New Game+) are now available on a fresh new game.
+* Default Text speed is now set to fast. Originally, you had to hold on the A button to make it scroll fast. Now holding down the A Button makes the text scroll slow instead, while the normal conversation text scrolls fast without the press of a button.
 * Modify the Morph Ball so its rolling animation stops when Samus is static or not moving at all. The rolling animation only works as normal when moving left or right.
 * Modify Samus' suit palettes to have a better colour palette based on the In-Game cutscenes and official artwork (specifically for the Varia Suit, so it better matches its artwork colours). This is a further improved hack of this: https://www.romhacking.net/hacks/7473/
 * Charge Beam is no longer cancelled when doing walljumps
@@ -46,7 +49,6 @@ https://github.com/ShadowOne333/Metroid-Fusion-Redux
 * Horizontal speed is now maintained when landing after a jump, instead of being reset to 0 on each land.
 * More accurate In-Game clock (a second each 60 frames instead of 64 frames)
 * Single Wall walljump is now possible, like in Super Metroid and Zero Mission. Several Demos have also been fixed manually to account for the new walljumping mechanic.
-* It's now possible to skip the Introduction cutscene by pressing Start, even if the current save file hasn't been completed. 
 * Stage palettes have been modified to have a better selection of non-saturated colours. This also modifies the red outlines that many assets of Fusion had.
 * Restored an unused Dock room in the original Metroid Fusion, just above the starting area. (It might hold a new added item).
 * Moved the forced Missile Tank from Sector 3 to a new location in Sector 5 (Room 0B, one tile room with a U-shaped bomb trail) where it's optional for 0% runs.
@@ -61,7 +63,9 @@ https://github.com/ShadowOne333/Metroid-Fusion-Redux
 1. **Disable Low Health Alarm** - Self-explanatory. Disables the alarm that you get when Samus is on low health
 2. **Normal Beam Chargeable** - Allows the small Normal beam to be chargeable
 3. **Permanent Debug Menu** - Enable the Debug menu In-Game. This replaces the Status screen for Samus.
-4. **Original Gallery Unlocks** - Fusion Redux makes all the Gallery Images available right from the start on a fresh save. This patch undoes that, and keeps both the Gallery and all the images locked until the proper requirements for each one is made appropriately, for those that want to unlock them on their own. 
+4. **Original Gallery Unlocks** - Fusion Redux makes all the Gallery Images available right from the start on a fresh save. This patch undoes that, and keeps both the Gallery and all the images locked until the proper requirements for each one is made appropriately, for those that want to unlock them on their own.
+*NOTE:* Be sure to apply this patch BEFORE starting your game!
+This will only take effect on a fresh save file, meaning without a save file created by the emulator/hardware!
 
 -------------------
 
@@ -133,6 +137,7 @@ If you want to apply any of the optional patches, you can use each Optional patc
 * **Jumzhu** - For the original Faster Door Transitions hack, which got a subsequent fix and then ported over to MF_J by me.
 * **interdpth** - For the original End Game Ship OAM fix, which was ported over to MF_J by me.
 * **Amaroq the Kitsune** - For the In-Game Timer fix.
+* **cluekitty** - For the Enable Item Collection list & Timer on new save file hack.
 * **Metroid Construction** overall for all the great resources, forums and help towards this hack.
 
 

@@ -21,6 +21,12 @@
 .org 0x807FA14
     .dw 0x1FFF
 ;-------------------------------------
+; [MF_J] Enable Item Collection list & Timer on new game
+; MF_U code by cluekitty, ported to MF_J by ShadowOne333
+.org 0x8078734	; 0x877F60 in MF_U
+    ;ldrsb r0, [r1, r0] ; 08 56
+    mov r0, #1	; 08 56 -> 01 20
+;-------------------------------------
 ;Single wall jumping (U)
 ;0x92BC - 0x16 -> 0x0B
 ; For Fusion (J), Needs the walljumping demo to be fixed
