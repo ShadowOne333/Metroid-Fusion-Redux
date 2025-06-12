@@ -13,6 +13,7 @@
 .include "code/Sequence Breaking Fusion/SBF_J_v1.0.asm"
 ;.include "code/SBF/zazabi_fix.asm"
 .include "code/Sequence Breaking Fusion/MissilePBTankFix.asm"
+.include "code/Sequence Breaking Fusion/SBF_J_noAnimalSkip.asm"
 
 ;=====================================
 ; Optional things
