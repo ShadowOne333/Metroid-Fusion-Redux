@@ -3,6 +3,9 @@
 .gba
 .open "rom/Metroid Fusion (Japan).gba","out/Metroid Fusion.gba",0x8000000
 
+; Modify max amount of items per area
+.include "code/area_items.asm"
+
 ; Language selection code by biospark
 .include "code/Language Patch/MF_J_language.asm"
 
