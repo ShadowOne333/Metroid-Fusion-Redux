@@ -19,10 +19,10 @@
 ;-------------------------------------
 ; Main Deck room 26 extended the passageway on the top right to properly connect to the hallway tiles from Room C9 (or 54?)
 ; Sector 1 rooms 30/31 added numbers
-; Sector 2 room 1B fixed a missing tile, and 34/35 added numbers
-; Sector 3 rooms 25/26 added numbers
+; Sector 2 room 1B fixed a missing tile, and rooms 34/35 added numbers
+; Sector 3 room 06 removed one forced Missile Tank, and rooms 25/26 added numbers
 ; Sector 4 rooms 2B/2C added numbers
-; Sector 5 rooms 1F/25 added numbers
+; Sector 5 room 0B added the removed Missile Tank from Sector 3, and rooms 1F/25 added numbers
 ; Sector 6 rooms 24/25 added numbers
 ;-------------------------------------
 
@@ -65,12 +65,15 @@
 .org 0x857585C
 	.import "data/minimaps/sector3_minimap.bin"
 ; Sector 3 room entries
+.org 0x84FC8E4	; 0x84FA208 in U
+sector3_room06_layout:
+	.import "data/rooms/sector3_room06_layout.bin"
 .org 0x83C8A28	; 0x83C6460 in U
 	.dw sector3_room25_layout	; Moved to 0x847707C by MAGE
 .org 0x83C8A64	; 0x83C649C in U
 	.dw sector3_room26_layout	; Moved to 0x84770AC by MAGE
 ;-------------------------------------
-; Sector 3 Minimap change to add back the forced Missile Tank from Sector 3 into Room 0B of Sector 5
+; Sector 5 Minimap change to add back the forced Missile Tank from Sector 3 into Room 0B of Sector 5
 .org 0x857603C
 	.import "data/minimaps/sector5_minimap.bin"
 ; Sector 5 room entries
