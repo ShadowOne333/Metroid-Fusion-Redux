@@ -28,6 +28,10 @@
 ; Door transitions are now faster, and this fixes an issue where vertical scrolling during door transition would get stuck in a loop when needing to scroll an odd number of pixels
 .include "code/faster_door_transitions.asm"
 
+; Faster Elevators by interdpth
+; Elevators now move faster, making for smaller wait times between sectors/areas
+.include "code/faster_elevators.asm"
+
 ; Keep Speed / Smooth Landing code
 ; Horizontal speed doesn't get reset to 0 every time Samus lands on a surface. Ie: you hit the ground running, and maintain speed boost after jumping and landing, like in project base, however it does reset the speed boost counter.
 .include "code/keep_speed.asm"

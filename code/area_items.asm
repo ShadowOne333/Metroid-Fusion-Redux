@@ -27,3 +27,6 @@
 
 	; Sector 6 items - 3 ET, 6 MT, 3 PB
 	.db 0x03,0x06,0x03
+
+	; Global item count
+	.db 0x14,0x30,0x21

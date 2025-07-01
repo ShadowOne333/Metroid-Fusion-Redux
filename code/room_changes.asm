@@ -25,7 +25,6 @@
 ; Sector 5 room 0B added the removed Missile Tank from Sector 3, and rooms 1F/25 added numbers
 ; Sector 6 rooms 24/25 added numbers
 ;-------------------------------------
-
 ; Main Deck room entries
 .org 0x83C5B08	; 0x83C3540 in U
 	.dw main_deck_room26_layout1	; Moved to 0x879ECC8 by MAGE

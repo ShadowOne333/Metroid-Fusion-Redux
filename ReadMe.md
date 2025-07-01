@@ -41,6 +41,7 @@ https://github.com/ShadowOne333/Metroid-Fusion-Redux
 * Modify Samus' suit palettes to have a better colour palette based on the In-Game cutscenes and official artwork (specifically for the Varia Suit, so it better matches its artwork colours). This is a further improved hack of this: https://www.romhacking.net/hacks/7473/
 * Charge Beam is no longer cancelled when doing walljumps
 * Equipment Screen fix
+* Faster Elevators movement
 * Faster Door Transitions 
 * Fixes a glitched frame in Samus when doing a Walljump to the left
 * Fixes to the endame ship OAM
@@ -135,7 +136,7 @@ If you want to apply any of the optional patches, you can use each Optional patc
 * **yohann** - For helping me find the proper X-Pos value for Samus on the Game Over screen, and also finding the value which allows for the Skip Intro hack.
 * **Captain Glitch** - For the original Better Morph Ball hack, which was ported over to MF_J by me.
 * **Jumzhu** - For the original Faster Door Transitions hack, which got a subsequent fix and then ported over to MF_J by me.
-* **interdpth** - For the original End Game Ship OAM fix, which was ported over to MF_J by me.
+* **interdpth** - For the original End Game Ship OAM fix, which was ported over to MF_J by me, and also the Faster Elevators hack which was modified and reworked for MF_J.
 * **Amaroq the Kitsune** - For the In-Game Timer fix.
 * **cluekitty** - For the Enable Item Collection list & Timer on new save file hack.
 * **Metroid Construction** overall for all the great resources, forums and help towards this hack.
