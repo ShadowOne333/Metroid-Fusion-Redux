@@ -23,6 +23,7 @@ AddMissiles:
     add     r1,r2,r1
     ldrb    r1,[r1,1]           ; r1 = increase amount
     mul     r0,r1               ; r0 = max capacity
+    add     r0,0xA              ; account for 10 initial missiles
     ldr     r2,=Equipment
     ldrh    r3,[r2,6]
     add     r3,r3,r1            ; r3 = new capacity
@@ -51,6 +52,7 @@ AddPowerBombs:
     add     r1,r2,r1
     ldrb    r1,[r1,2]           ; r1 = increase amount
     mul     r0,r1               ; r0 = max capacity
+    add     r0,0xA              ; account for 10 initial PBs 
     ldr     r2,=Equipment
     ldrb    r3,[r2,9]
     add     r3,r3,r1            ; r3 = new capacity
