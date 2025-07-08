@@ -26,6 +26,17 @@
 ; Sector 6 rooms 24/25 added numbers
 ;-------------------------------------
 ; Main Deck room entries
+; Change Speed Blocks in room 11 to not reform instead of reform so the player doesn't softlock in the tube with the Power Bomb tank in the Restricted Area lab entrance
+.org 0x8474913	; 0x8472237 in U
+	.db 0x83,0x10,0x85,0x58,0x89
+.org 0x8474A5B	; 0x847237F in U
+	.db 0x58
+; Change Elevator from Restricted Area -> Main Deck to allow for Speed Booster timing
+.org 0x848073C	; 0x847E060 in U
+	.import "data/rooms/maindeck_room43_layout0.bin"
+.org 0x8480980	; 0x847E2A4 in U
+	.import "data/rooms/maindeck_room43_layout1.bin"
+
 .org 0x83C5B08	; 0x83C3540 in U
 	.dw main_deck_room26_layout1	; Moved to 0x879ECC8 by MAGE
 .org 0x83C5B0C	; 0x83C3544 in U

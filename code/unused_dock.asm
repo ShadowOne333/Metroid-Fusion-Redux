@@ -9,7 +9,13 @@
 ; Main Deck Minimap Post-Restricted Lab
 ; The Main Deck minimap gets changed to Debug Minimap 3 once the Restricted lab is detached from the Station
 .org 0x87EE50C	; 0x879BE5C in U
-	.dw debug3_minimap
+	.dw minimap	// Primary Main Deck minimap
+.org 0x87EE528	; 0x879BE78 in U
+	.dw minimap	// debug1_minimap
+.org 0x87EE52C	; 0x879BE7C in U
+	.dw minimap	// debug2_minimap
+.org 0x87EE530	; 0x879BE80 in U
+	.dw debug3_minimap	// Main Deck Debug 3 minimap (After Restricted Area scene)
 ;-------------------------------------
 ; Data for the Main Deck doors
 ; Reused for minimap and layout data as free space
@@ -18,6 +24,8 @@
 ; Import minimap, Main Deck's Room 2 and Room 6 layout data here since it's free space now and it fits.
 minimap:
 	.import "data/minimaps/main_deck_minimap.bin"
+//debug1_minimap:	// Same as Main Deck minimap
+//debug2_minimap:	// Same as Main Deck minimap
 debug3_minimap:
 	.import "data/minimaps/main_deck_debug3_minimap.bin"
 room2_layout:
