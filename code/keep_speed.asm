@@ -12,7 +12,7 @@
 .pool
 
 ; Move to free space for MF_J
-.org 0x87F32A0	;0x87F1460	; 879F370 in MF_U
+.org 0x87F3400	;0x87F1460	; 879F370 in MF_U
 KeepSpeed:
 	push    r4,r5,r14        ;
 	ldr     r2,=SamusData     ;
