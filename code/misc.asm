@@ -113,4 +113,24 @@
 .org 0x807A9EA	; 03 D0 -> C0 46
 	nop
 ;-------------------------------------
+; [MF_U] changes for the Charged Beam while jumping, by ckosmick
+; Ported to MF_J by ShadowOne333
+
+;The charge particle isn't hidden when spin jumping
+;0x80743e6 & 0x80744CA in MF_U
+.org 0x8074AAA	; Charge core
+	.dh 0h	; 28 70 -> 00 00
+.org 0x8074BB2	; Charge sparks
+	.dh 0h	; 18 70 -> 00 00
+
+;Fix space jump
+;0x828d9c4 : bc b4 28 08 7c b4 28 08
+.org 0x828FCCC
+	.dw 0828D7C4h,0828D784h	; C4 D7 28 08 84 D7 28 08
+
+;Fix screw attack
+;0x828d9cc : bc b4 28 08 7c b4 28 08
+;.org 0x828FCD4
+	.dw 0828D7C4h,0828D784h	; C4 D7 28 08 84 D7 28 08
+;-------------------------------------
 .pool

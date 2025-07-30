@@ -48,6 +48,7 @@ https://github.com/ShadowOne333/Metroid-Fusion-Redux
 * Fixes the arm cannon palette to update accordingly with the suit colours
 * IBJ (Infinite Bomb Jump) is now possible like in Super Metroid and Zero Mission. Several Demos have also been fixed manually to account for the new bomb timings.
 * Horizontal speed is now maintained when landing after a jump, instead of being reset to 0 on each land.
+* Jumping while charging the beam will now have the proper effects applied and restored to all jumps, including Spin Jump, Space Jump and Screw Attack.
 * More accurate In-Game clock (a second each 60 frames instead of 64 frames)
 * Single Wall walljump is now possible, like in Super Metroid and Zero Mission. Several Demos have also been fixed manually to account for the new walljumping mechanic.
 * Stage palettes have been modified to have a better selection of non-saturated colours. This also modifies the red outlines that many assets of Fusion had.
@@ -139,6 +140,7 @@ If you want to apply any of the optional patches, you can use each Optional patc
 * **interdpth** - For the original End Game Ship OAM fix, which was ported over to MF_J by me, and also the Faster Elevators hack which was modified and reworked for MF_J.
 * **Amaroq the Kitsune** - For the In-Game Timer fix.
 * **cluekitty** - For the Enable Item Collection list & Timer on new save file hack.
+* **ckosmick** - For the Charge Beam effects restored to the Spin Jump, Space Jump and Screw Attack for MF_U, then ported over to MF_J by me.
 * **Metroid Construction** overall for all the great resources, forums and help towards this hack.
 
 
