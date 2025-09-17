@@ -48,6 +48,18 @@
 .org 0x8056B5C	; 0x56B5C in (J)
 	nop
 ;-------------------------------------
+; [MF_U] Fixes the broken arm cannon OAM frame when crouching and shooting right
+;.org 0x828A1A4
+;    .dh 0x2003
+;    .dh 0x00EC, 0x41F1, 0x1040
+;    .dh 0x00E4, 0x4001, 0x1042
+;    .dh 0x00F4, 0x4001, 0x1044
+.org 0x828C4A8	; 0x28C4A8 in (J)
+    .dh 0x2003
+    .dh 0x00EC, 0x41F1, 0x1040
+    .dh 0x00E4, 0x4001, 0x1042
+    .dh 0x00F4, 0x4001, 0x1044
+;-------------------------------------
 ; Mid-air bomb jump (J) by biospark
 .org 0x80092A4
 	b 0x80092E0
