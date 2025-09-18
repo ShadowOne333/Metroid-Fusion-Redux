@@ -1,5 +1,6 @@
 # Ignore all ROM files
 *.gba
+*.zip
 out/*.gba
 out/*.ss1
 out/*.sav
