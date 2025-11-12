@@ -14,6 +14,8 @@
 ;.include "code/SBF/zazabi_fix.asm"
 .include "code/Sequence Breaking Fusion/MissilePBTankFix.asm"
 .include "code/Sequence Breaking Fusion/SBF_J_noAnimalSkip.asm"
+.include "code/Sequence Breaking Fusion/SBF_J_DontSkipAnimalsMonologue.asm"
+.include "code/Sequence Breaking Fusion/SBF_J_DontSkipAnimalsMonologue_FS.asm"
 
 ;=====================================
 ; Optional things
