@@ -93,3 +93,16 @@ room6_layout:
 door_data:
 	.import "data/doors/main_deck_door_data.bin"
 
+;-------------------------------------
+; Modify the new door to have Hatch (can lock) flag
+.org 0x83C2688	; 0x83C00C0
+	.db 0x14
+
+; Add Hatch Event locks for the new Green door in Main Deck
+; Hatch close for Event 103 (0x67)
+.org 0x83CB0EA	; 0x83C8B22
+	.db 0x07,0x13
+
+; Hatch close for Event 104 (0x68)
+.org 0x83CB11E	; 0x83C8B56
+	.db 0x07,0x13
