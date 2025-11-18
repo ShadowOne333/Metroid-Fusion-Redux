@@ -16,14 +16,15 @@
 ; Makes the morphball only do its "rolling" animation if the ball is moving
 .include "code/better_morph_roll.asm"
 
-; Better Suits Palette changes.
-; Modifies the suits slightly to better match their official artwork, with emphasis on the Fusion Varia Suit.
-.include "code/better_suits.asm"
-
 ; Color Improvement by Piggy Chan!
 ; A full recolour hack by Piggy Chan that aims to be faithful to the original colour design while improving the colours since the original game had some washed out palettes due to being an early GBA title
 ; Port to MF_J by ShadowOne333
 .include "code/ColorImprovement/color_improvement_port.asm"
+
+; Better Suits Palette changes.
+; Modifies the suits slightly to better match their official artwork, with emphasis on the Fusion Varia Suit.
+; This needs to be set after Color Improvement so our changes get applied over it
+.include "code/better_suits.asm"
 
 ; Equipment Screen Fix code
 ; Gets rid of ugly spaces between items on the Equipment screen when you get items out of order.
