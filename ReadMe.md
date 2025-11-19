@@ -141,6 +141,7 @@ If you want to apply any of the optional patches, you can use each Optional patc
 * **Amaroq the Kitsune** - For the In-Game Timer fix.
 * **cluekitty** - For the Enable Item Collection list & Timer on new save file hack.
 * **ckosmick** - For the Charge Beam effects restored to the Spin Jump, Space Jump and Screw Attack for MF_U, then ported over to MF_J by me.
+* **Piggy Chan!** - For the Color Improvement hack, which I ended up disassembling to port it not only to Fusion (J) for compatibility with Fusion Redux, but also to Fusion (E) as well.
 * **Metroid Construction** overall for all the great resources, forums and help towards this hack.
 
 

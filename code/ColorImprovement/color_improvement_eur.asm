@@ -12,7 +12,7 @@
 	.import "code/ColorImprovement/palettes/Pal1.pal"
 
 ; Fusion suit saving pal 0 row 0 and onwards
-.org 0x0828E4F8	; 0x0828F6FC in (U)
+.org 0x0828FD58	; 0x0828F6FC in (U)
 	.import "code/ColorImprovement/palettes/Pal1-1.pal"
 
 ; Second block of palettes (Unknown)
@@ -36,7 +36,7 @@
 	.import "code/ColorImprovement/palettes/Pal6.pal"
 
 ; Moto palette
-.org 0x082FF97C	; 0x082EF320 in (U)
+.org 0x082EF97C	; 0x082EF320 in (U)
 	.import "code/ColorImprovement/palettes/Pal7.pal"
 
 ; Save pad palette
@@ -92,7 +92,7 @@
 	.import "code/ColorImprovement/palettes/Pal20.pal"
 
 ; Space Jump ability palette
-.org 0x0831E464	; 0x0830DE08 in (U)
+.org 0x0830E464	; 0x0830DE08 in (U)
 	.import "code/ColorImprovement/palettes/Pal21.pal"
 
 ; Gravity Suit ability palette
@@ -132,7 +132,7 @@
 	.import "code/ColorImprovement/palettes/Pal30.pal"
 
 ; Message box palette
-.org 0x0832FA2C	; 0x0831F3D0 in (U)
+.org 0x0831FA2C	; 0x0831F3D0 in (U)
 	.import "code/ColorImprovement/palettes/Pal31.pal"
 
 ; Data pad palette
@@ -140,7 +140,7 @@
 	.import "code/ColorImprovement/palettes/Pal32.pal"
 
 ; Zebesian wall palette
-.org 0x08332148	; 0x08322BEC in (U)
+.org 0x08323248	; 0x08322BEC in (U)
 	.import "code/ColorImprovement/palettes/Pal33.pal"
 
 ; Recharge pad palette
@@ -440,7 +440,7 @@
 	.import "code/ColorImprovement/palettes/Pal106.pal"
 
 ; Unknown room 1 palette (?)
-.org 0x08406698	; 0x0840605C in (U)
+.org 0x084066B8	; 0x0840605C in (U)
 	.import "code/ColorImprovement/palettes/Pal106-1.pal"
 
 ; SA-X chase room palette
