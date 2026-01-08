@@ -33,7 +33,8 @@ https://github.com/ShadowOne333/Metroid-Fusion-Redux
 
 * Language Selection hack (by biospark), reworked to properly translate the Game Over screen and the "Start Over" text as well
 * Main game is now in English, while each file can have a specific language available for selection (thanks to the hack above from biospark).
-* It's now possible to skip the Introduction cutscene by pressing Start, even if the current save file hasn't been completed.
+* It's now possible to skip the Introduction cutscene by pressing START, even if the current save file hasn't been completed.
+* Similarly, Adam's conversations can also be skipped by pressing START. NOTE: Some conversations trigger a music change, if the player skips the conversation by pressing START, the music change will also be skipped over.
 * All Gallery images are unlocked by default on a fresh save file. NOTE: If you still want to unlock the images manually, apply the "Original Gallery Unlocks" optional patch over Redux and BEFORE starting your game! If you apply the patch over an already started game, the Gallery images will remain unlocked, as those are stored in the save file.
 * Item Collection list and Timer that appear on the Pause/Map Screen (previously exclusive to New Game+) are now available on a fresh new game.
 * Default Text speed is now set to fast. Originally, you had to hold on the A button to make it scroll fast. Now holding down the A Button makes the text scroll slow instead, while the normal conversation text scrolls fast without the press of a button.
