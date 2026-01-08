@@ -64,6 +64,10 @@
 ; This code should be disabled if Sequence Breaking Fusion is NOT used
 ;.include "code/og_bombs_walljump.asm"
 
+; Skip Adam conversations by pressing START (by SpineShark)
+; Be aware that conversation text can trigger music events, so skipping certain conversations will also skip their event music changes.
+.include "code/MF_J_AdamSkip.asm"
+
 ; Unused Docking Bay
 ; Restores a previously unused area (Docking Bay) found in the Main Deck, just north of the starting area
 .include "code/unused_dock.asm"

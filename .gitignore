@@ -3,6 +3,7 @@
 *.zip
 out/*.gba
 out/*.ss1
+out/*.ss2
 out/*.sav
 out/*.png
 rom/*.gba
