@@ -145,4 +145,9 @@
 ;.org 0x828FCD4
 	.dw 0828D7C4h,0828D784h	; C4 D7 28 08 84 D7 28 08
 ;-------------------------------------
+; [MF_J] Ignore L button on the map screen to block access to sleep mode (SpineShark)
+;0x080756B4 in MF_U
+;.org 0x08075E40	; 18 1C -> 09 E0
+	;b 0x8075E56
+;-------------------------------------
 .pool
