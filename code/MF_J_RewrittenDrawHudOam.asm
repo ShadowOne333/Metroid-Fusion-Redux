@@ -10,10 +10,8 @@
 .definelabel OamDataIWRAM, 0x3000E1C
 .definelabel NextOamSlot, 0x3001222
 
-;.org 0x80720A4	; MF_U
-.org 0x8072750	; MF_J
-;.area 0x254,0
-.area 0x98,0
+.org 0x80720A4	; MF_U
+.area 0x254,0
 DrawHudOam:
     push    r4-r7,lr
 ; r5 = OAM data source
