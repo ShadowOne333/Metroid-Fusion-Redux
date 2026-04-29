@@ -70,7 +70,7 @@
 
 ; Rewritten Draw HUD OAM routine (by SpineShark)
 ; Rewrites the DrawHudOam function to reduce its size and CPU cycle usage by about 3/4, while also making it easier to reposition the HUD elements.
-;.include "code/MF_J_RewrittenDrawHudOam.asm"
+.include "code/MF_J_RewrittenDrawHudOam.asm"
 
 ; Unused Docking Bay
 ; Restores a previously unused area (Docking Bay) found in the Main Deck, just north of the starting area
