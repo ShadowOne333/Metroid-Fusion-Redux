@@ -8,4 +8,5 @@
 
 ; check the new entries
 .org 0x8075444
-    cmp     r1,0x7 ; originally cmp r1,0x5
+    cmp r1,0x7 ; originally cmp r1,0x5
+    ble #0x8075396	; Original code added since the compiler puts 00 00 after the previous code
