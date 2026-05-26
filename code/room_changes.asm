@@ -19,7 +19,7 @@
 ;-------------------------------------
 ; Main Deck room 26 extended the passageway on the top right to properly connect to the hallway tiles from Room C9 (or 54?)
 ; Sector 1 rooms 30/31 added numbers
-; Sector 2 room 1B fixed a missing tile, and rooms 34/35 added numbers
+; Sector 2 room 0D added door collision to the top gray door and closed the door on the top-left, room 1B fixed a missing tile, and rooms 34/35 added numbers
 ; Sector 3 room 06 removed one forced Missile Tank, and rooms 25/26 added numbers
 ; Sector 4 rooms 2B/2C added numbers
 ; Sector 5 room 0B added the removed Missile Tank from Sector 3, and rooms 1F/25 added numbers
@@ -47,13 +47,24 @@
 	.dw sector1_room31_layout	; Moved to 0x8476D44 by MAGE
 
 ;-------------------------------------
-; Area room entry pointers
+; Sector 2 Tileset pointers
+.org 0x83C1E70	; 0x83BF8A8 in U
+	.dw sector2_tileset
+.org 0x83C1EC0	; 0x83BF8F8 in U
+	.dw sector2_tileset
+.org 0x83C20C8	; 0x83BFB00 in U
+	.dw sector2_tileset
+; MAGE blanked out section at 0x83C3510, 0x83C0F48 in U ($6E4 bytes)
+
+; Sector 2 Area room entry pointers
 ; Changed due to adding a door in Sector 2, room 0D
 .org 0x87EDF4C	; 0x879B89C in U
 	.dw sector2_doors	; Moved to 0x879F088 by MAGE
 
 ; Sector 2 room entries
-.org 0x83C7640	; 0x83C5078 in U
+.org 0x83C7638	; 0x83C5070 in U, BG3 pointer (0x4D0D55)
+	.dw sector2_room0D_bg3
+.org 0x83C7640	; 0x83C5078 in U, sprite layout
 	.dw sector2_room0D_layout	; Moved to 0x879EE8C by MAGE
 
 .org 0x83C7980	; 0x83C53B8 in U
@@ -109,8 +120,11 @@ sector3_room06_layout:
 ;-------------------------------------
 ; Blank out the following addresses
 ; These could be used for free space
+;3C3510 - 3C3BF3 -> Sector 2 door data
 ;4A1C42 - 4A1C65
 ;4A1D49 - 4A1D6C
+;4C9804 - 4CA585 -> Sector 2 tileset
+;4D2E88 - 4D3077 -> Sector 2 room 0D BG3 data
 ;4D49D8 - 4D4B98
 ;4DB229 - 4DB24C
 ;4DB32E - 4DB351
@@ -123,7 +137,7 @@ sector3_room06_layout:
 ;556CA9 - 556CCC
 ;556DB6 - 556DD9
 ;-------------------------------------
-.org 0x87F1ED0
+.org 0x87F2000
 main_deck_room26_layout1:
 	.import "data/rooms/main_deck_room26_layout1.bin"
 main_deck_room26_layout0:
@@ -134,6 +148,8 @@ sector1_room30_layout:
 	.import "data/rooms/sector1_room30_layout.bin"
 sector1_room31_layout:
 	.import "data/rooms/sector1_room31_layout.bin"
+sector2_room0D_bg3:
+	.import "data/rooms/sector2_room0D_bg3.bin"
 sector2_room0D_layout:
 	.import "data/rooms/sector2_room0D_layout.bin"
 sector2_room1B_layout1:
@@ -167,5 +183,8 @@ sector6_room25_layout:
 sector2_doors:
 	.import "data/doors/sector2_door_data.bin"
 ;-------------------------------------
-
-
+; Sector 2 tileset
+; Overwrite the original tileset data with the new one
+sector2_tileset:
+	.import "data/tilesets/sector2_tileset.bin"
+;-------------------------------------
