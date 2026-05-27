@@ -11,6 +11,8 @@ BASE_ROM = rom/Metroid Fusion (Japan).gba
 CLEAN_ROM = rom/FusionRedux.gba
 PATCHED_ROM = $(OUT_FOLDER)/$(FILE_BASE).gba
 ASM_FILE = main.asm
+ARMIPS = bin/armips
+FLIPS = bin/flips
 CHECKSUM = 5d21c668baa84da4a5b745be56809bb277f947a3
 #-------------------------------------
 all: verify-name prepare verify-sha prepare apply-patch
@@ -42,8 +44,8 @@ verify-sha:
 #-------------------------------------
 apply-patch:
 	@cp "$(CLEAN_ROM)" "$(PATCHED_ROM)"
-	@bin/armips "$(ASM_FILE)"
-	@bin/flips --create --ips "$(CLEAN_ROM)" "$(PATCHED_ROM)" "$(PATCHES_FOLDER)/Metroid Fusion Redux.ips"
+	@"$(ARMIPS)" "$(ASM_FILE)"
+	@"$(FLIPS)" --create --ips "$(CLEAN_ROM)" "$(PATCHED_ROM)" "$(PATCHES_FOLDER)/Metroid Fusion Redux.ips"
 #-------------------------------------
 clean:
 	@rm -f "$(CLEAN_ROM)" "$(PATCHED_ROM)" "$(PATCHES_FOLDER)/Metroid Fusion Redux.ips"
