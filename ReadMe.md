@@ -66,6 +66,7 @@ https://github.com/ShadowOne333/Metroid-Fusion-Redux
 1. **Disable Low Health Alarm** - Self-explanatory. Disables the alarm that you get when Samus is on low health
 2. **Normal Beam Chargeable** - Allows the small Normal beam to be chargeable
 3. **Permanent Debug Menu** - Enable the Debug menu In-Game. This replaces the Status screen for Samus.
+3. **Original Colours** - Revert back all of the colour changes from Color Improvement and Better Suits to that of vanilla Fusion.
 4. **Original Gallery Unlocks** - Fusion Redux makes all the Gallery Images available right from the start on a fresh save. This patch undoes that, and keeps both the Gallery and all the images locked until the proper requirements for each one is made appropriately, for those that want to unlock them on their own.
 *NOTE:* Be sure to apply this patch BEFORE starting your game!
 This will only take effect on a fresh save file, meaning without a save file created by the emulator/hardware!
