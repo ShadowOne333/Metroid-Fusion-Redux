@@ -150,4 +150,9 @@
 ;.org 0x08075E40	; 18 1C -> 09 E0
 	;b 0x8075E56
 ;-------------------------------------
+; [MF_J] Move the Kago enemy in room 0x18 of Sector 5 one tile right to allow the player to still go through the PB block with Sequence Break
+; 0x851B53F in MF_U
+.org 0x851DC1E	; 09 -> 0A
+	.dh 0Ah
+;-------------------------------------
 .pool

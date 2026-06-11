@@ -45,10 +45,10 @@ verify-sha:
 apply-patch:
 	@cp "$(CLEAN_ROM)" "$(PATCHED_ROM)"
 	@"$(ARMIPS)" "$(ASM_FILE)"
-	@"$(FLIPS)" --create --ips "$(CLEAN_ROM)" "$(PATCHED_ROM)" "$(PATCHES_FOLDER)/Metroid Fusion Redux.ips"
+	@"$(FLIPS)" --create --bps "$(CLEAN_ROM)" "$(PATCHED_ROM)" "$(PATCHES_FOLDER)/Metroid Fusion Redux.bps"
 #-------------------------------------
 clean:
-	@rm -f "$(CLEAN_ROM)" "$(PATCHED_ROM)" "$(PATCHES_FOLDER)/Metroid Fusion Redux.ips"
+	@rm -f "$(CLEAN_ROM)" "$(PATCHED_ROM)" "$(PATCHES_FOLDER)/Metroid Fusion Redux.bps"
 	@echo "Cleaned patches and compiled ROMs."
 #-------------------------------------
 # Convenience target to only build patched ROM (skips checksum)
