@@ -3753,7 +3753,7 @@ sub_8084844:
 sub_8084888:
     push    r14
     ldrb    r0,[r4]	; r4 = current room spriteset
-    cmp     r0,0	; Originally r0,0 in SBF v1.0, possibly r0,1 for a v1.1
+    cmp     r0,1	; Originally r0,0 in SBF v1.0
     bne     @@_80848E2
     ldr     r2,=EventData_8084986 ; 0x8084986
 @@_8084892:
