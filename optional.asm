@@ -14,3 +14,6 @@
 
 ; Revert back the "Unlock All Gallery Images" hack so players can unlock the Gallery Images as intended originally
 ;.include "optional/original_gallery_unlocks.asm"
+
+; Improve the Sample Rate of the game from 10kHz to 21kHz
+;.include "optional/sound_improvement.asm"
