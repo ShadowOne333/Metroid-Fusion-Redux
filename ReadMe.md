@@ -118,10 +118,10 @@ To play Metroid Fusion Redux, the following is required:
 	File/ROM SHA-1: 5D21C668BAA84DA4A5B745BE56809BB277F947A3
 	File/ROM CRC32: 817A7E9E
 
-* Lunar IPS
+* [Floating IPS (FLIPS)](https://git.disroot.org/Sir_Walrus/Flips).
 * Metroid-Fusion-Redux.ips patch
 
-Grab the patches from inside the /patches/ folder from the GitHub page, or alternatively, download the .zip file from the Releases page (once a proper release is out) and apply the patch over your Metroid Fusion ROM with Lunar IPS.
+Grab the patches from inside the /patches/ folder from the GitHub page, or alternatively, download the .zip file from the Releases page (once a proper release is out) and apply the patch over your Metroid Fusion ROM with * [Floating IPS (FLIPS)](https://git.disroot.org/Sir_Walrus/Flips).
 If you want to apply any of the optional patches, you can use each Optional patch individually from inside the /patches/optional folder depending on your liking over your already patched Metroid Fusion Redux ROM, or you can either compile them manually from the source code, although this is not recommended if you are not familiar with compilations or ARMIPS assembly.
 
 
