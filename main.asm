@@ -72,6 +72,10 @@
 ; Rewrites the DrawHudOam function to reduce its size and CPU cycle usage by about 3/4, while also making it easier to reposition the HUD elements.
 .include "code/MF_J_RewrittenDrawHudOam.asm"
 
+; Skip Item Banners and Item Fanfares (by SpineShark)
+; Skip most message banners and item fanfares, if playing, get skipped too.
+.include "code/MF_J_SkipItemBannerAndFanfare.asm"
+
 ; Unused Docking Bay
 ; Restores a previously unused area (Docking Bay) found in the Main Deck, just north of the starting area
 .include "code/unused_dock.asm"
